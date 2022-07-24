@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+
+    /* CSS Variables */
+    --primary: #6b21a8;
+    --background: #a855f7;
+    --secondary: #e9d5ff;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background: var(--secondary);
+    /* background-image: url(./assets/blue-BG.png); */
+    /* background-repeat: no-repeat; */
+}
+
+button{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 20px;
+}
+
+h1{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+h2{
+    font-size: 50px;
+    color: var(--primary);
+    text-align: center;
+}
+
+h4{
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a{
+    margin: 10px;
+    font-weight: 600;
+}
+
+/* # for ID, . for class */
+
+#home-container{
+    display: flex;
+    margin-top: 7%;
+    justify-content: center;
+    padding: 10px 10%;
+}
+
+#home-container .home-info{
+    width: 50%;
+}
+
+#home-container img{
+    width: 90%;
+    height: 90%;
+    margin-left: 20%;
+}
+
+#home-container .home-description{
+    font-size: px;
+}
+
+#home-container button{
+    background: var(--primary);
+    width: 150px;
+    height: 40px;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+}
+
+#home-container button a{
+    color: white;
+    font-weight: 600;
+}
+
+#aboutme-container{
+    margin: 15% 0;
+}
+
+#aboutme-container .aboutme-description{
+    font-size: 20px;
+    margin: 0 20%;
+}
+
+#project-container .project-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#project-container .project-cards .project-card{
+    width: 300px;
+    height: auto;
+    background: var(--background);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    margin: 20px;
+    
+}
+
+#project-container .project-cards .project-card img{
+    width: 260px;
+    border-radius: 5px;
+}
+
+#project-container .project-cards .project-card span{
+    background: white;
+    color: black;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+#contact-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#contact-container .gmail{
+    background: var(--primary);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+}
+
+#contact-container .gmail a{
+    color: white;
+}
+
+#contact-container .social-links{
+    margin: 20px 0;
+}
+
+#contact-container .social-links i{
+    font-size: 36px;
+    margin: 10px;
+}
+
+footer{
+    width: 100vw;
+    text-align: center;
+}
+
+@media (max-width: 800px){
+
+    h1{
+        font-size: 46px;
+        line-height: 32px;
+        width: 300px;
+    }
+
+    #home-container{
+        flex-direction: column;
+    }
+
+    #home-container .home-info{
+        width: 300px;
+    }
+
+    #home-container img{
+        margin: 20px auto;
+    }
+
+    #aboutme-container .aboutme-description{
+        margin: 0 20px;
+        text-align: justify;
+    }
+
+    #project-container .project-cards .project-card .project-description{
+        text-align: justify;
+    }
+}
